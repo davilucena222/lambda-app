@@ -17,7 +17,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh "sam build -t lambda-app/template.yaml -y"
+                sh "sam build -t lambda-app/template.yaml"
 
             }
         }
