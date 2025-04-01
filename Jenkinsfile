@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'export PATH=$HOME/.local/bin:$PATH && pytest'
+                sh 'export PATH=$HOME/.local/bin:$PATH && pytest -v lambda-app/tests/'
             }
         }
 
