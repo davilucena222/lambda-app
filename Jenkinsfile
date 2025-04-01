@@ -21,7 +21,7 @@ pipeline {
 
             }
         }
-        stage('Deploy App') {
+        stage('Deploy') {
 
             environment {
                 AWS_ACCESS_KEY_ID = credentials('aws-access-key')
